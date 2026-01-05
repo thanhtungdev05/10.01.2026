@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Satisfy&display=swap');
+
+/* ===== CARD CONTAINER ===== */
+.row {
+  margin: 15px;
+  height: 300px;
+  width: 100%;
+  position: relative; /* BẮT BUỘC để nút xóa nổi */
+  border-radius: 5px;
+  overflow: hidden; /* tránh tràn */
+}
+
+/* ===== USER NAME HEADER ===== */
+.txtUser {
+  padding-top: 28px; /* chừa chỗ cho nút xóa */
+  width: 100%;
+  height: 20%;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: "Oswald";
+  background-color: rgb(246, 119, 41);
+  border-radius: 5px 5px 0 0;
+  color: white;
+}
+
+/* ===== WISH CONTENT ===== */
+.txtWish {
+  padding: 15px;
+  width: 100%;
+  height: 80%;
+  font-weight: 200;
+  font-size: 16px;
+  position: relative;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: "Oswald";
+  background-color: rgb(255, 201, 167);
+  border-radius: 0 0 5px 5px;
+  color: rgb(189, 107, 62);
+}
+
+/* ===== DELETE BUTTON ===== */
+.delete-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 99;
+
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover hiện nút xóa */
+.row:hover .delete-btn {
+  opacity: 1;
+}
+
+/* Hover nút xóa */
+.delete-btn:hover {
+  background-color: #ff3b3b;
+  transform: scale(1.05);
+}
+
+/* ===== BACK BUTTON ===== */
+#backContainer {
+  text-align: center;
+  margin: 20px 0;
+}
+.btnControl {
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: rgb(243, 126, 32);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+}
